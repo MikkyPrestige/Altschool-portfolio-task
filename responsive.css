@@ -1,55 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Orelega+One&family=Rubik+Puddles&display=swap');
+
 @media (min-width: 320px) and (max-width: 480px) {
   header {
-   display: flex;
+    display: flex;
   }
-  
+
   nav {
     position: absolute;
     top: 0px;
-   transform: translateX(100%);
+    transform: translateX(-100%);
     visibility: hidden;
-    transition: 2s ease-out;
+    transition: 2s ease-in;
     background-color: #191970;
   }
-  
-#click {
-  visibility: visible;
-  margin-left: 20px;
-  font-family: 'Orelega One', cursive;
-  font-size: 40px;
-  text-decoration: none;
-  text-shadow: 5px 5px hsl(224, 23%, 55%);
-}
 
-.undoer {
-  visibility: visible;
-}
+  #click {
+    visibility: visible;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Orelega One', cursive;
+    text-decoration: none;
+    text-shadow: 5px 5px hsl(224, 23%, 55%);
+  }
+
+  .undoer {
+    visibility: visible;
+  }
 
   nav a {
     display: block;
-    transition: inherit;
+   /* transform: inherit;
+    transition: inherit;*/
     font-size: 14px;
     white-space: nowrap;
-    text-align: start;
   }
 
-  .undoer, :target {
+  .undoer,
+  :target {
     display: none;
   }
 
-  :target + .undoer {
+  :target+.undoer {
     display: block;
   }
 
-  :target ~ nav {
+  :target~nav {
     visibility: visible;
     transform: none;
   }
-  
-  :target ~ #click {
+
+  :target~#click {
     visibility: hidden;
   }
-  
+
   .container {
     width: 100%;
     margin: 0;
@@ -63,10 +67,9 @@
   }
 
   img:hover {
-    width: 20%;
-    height: 100px;
+    transform: skew(10deg, 10deg);
   }
-  
+
   .profile-links {
     display: flex;
     flex-direction: column;
@@ -76,6 +79,10 @@
   h3 {
     line-height: 50px;
     white-space: normal;
+  }
+  h2 {
+    font-size: small;
+    padding: 10px;
   }
 
   table {
@@ -96,16 +103,25 @@
     margin-left: 50px;
   }
 
+
+  .work {
+    white-space: nowrap;
+    width: fit-content;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+
   .reg-btn {
     width: 100%;
     padding: 3px;
     margin: 10px 0;
   }
+
   .register-box {
     width: 100%;
     margin: 10px 0;
   }
-  
+
   .container-text {
     white-space: nowrap;
     font-size: 18px;
@@ -114,21 +130,14 @@
   .login-form {
     text-align: center;
     padding: 30px;
-}
+  }
 }
 
 /* still defining the media queries feel free to fork it */
 @media (min-width: 481px) and (max-width: 768px) {
-
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  
-}
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-  
-}
-@media (min-width: 1201px) {
-  
+
 }

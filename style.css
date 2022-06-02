@@ -89,7 +89,7 @@ div a:hover {
       margin: var(--margin);
 }
 
-h1 {
+h1, h2{
       text-align: center;
       text-decoration: underline;
       font-size: var(--large-font-size);
