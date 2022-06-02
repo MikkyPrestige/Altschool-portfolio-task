@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navsection">
+        <a href="index.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="csscal.html">Css-cal.</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="contact" class="container">
+    <h1>Contact info</h1>
+    
+    <div class="div-container">
+      <form action="" method="post">
+        <label for="name" class="container-text">Name</label>
+        <input type="text" name="name" id="name" class="contact-form" placeholder="enter your name" required>
+        <br>
+        <label for="email" class="container-text">Email address</label>
+        <input type="email" name="email" id="email" class="contact-form" placeholder="enter your email address"
+          required>
+        <br>
+        <label for="message" class="container-text">Message
+          <textarea id="message" name="message" required>Write a message</textarea>
+          <br>
+          <label for="dropdown" class="container-text">Experience</label>
+          <select name="dropdown" id="dropdown" class="contact-form" required>
+            <option value="select">Select</option>
+            <option value="years">0 - 1</option>
+            <option value="years">2 - 5</option>
+            <option value="years">6 - 10</option>
+            <option value="years">10 above</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+          </select>
+          <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navsection">
+        <a href="index.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="csscal.html">Css-cal.</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="register">
+    <h1>Register here</h1>
+   
+    <div class="div-container">
+      <form action="" method="post" class="container-text">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" class="register-box" name="first_name" required>
+        <br>
+        <label for="last_name">Last name</label>
+        <input type="text" id="last_name" class="register-box" name="last_name" required>
+        <br>
+        <label for="number">Phone number</label>
+        <input type="tel" id="number" class="register-box" name="number" required>
+        <br>
+        <label for="dropdown">Gender</label>
+        <select name="dropdown" id="dropdown" class="register-box" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+          <option nalue="prefer_not_to_say">Prefer not to say</option>
+        </select>
+        <br>
+        <label for="country">Country</label>
+        <input type="text" id="country" class="register-box" required>
+        <br>
+        <label for="state">State/Province</label>
+        <input type="text" id="state" class="register-box" required>
+        <br>
+        <label for="username">Username</label>
+        <input type="text" id="username" class="register-box" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" class="register-box" required>
+        <br>
+        <label for="confirm_password">Confirm password</label>
+        <input type="password" id="confirm_password" class="register-box" required>
+        <button type="submit" class="reg-btn">Register</button>
+    </div>
+  </section>
+</body>
+
+</html>

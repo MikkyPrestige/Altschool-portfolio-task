@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Orelega+One&family=Rubik+Puddles&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  :root {
+      --steel-color: steelblue;
+      --red-color: #FF0000;
+      --mint-color: #F5FFFA;
+      --margin: 100px auto;
+      --medium-font-size: 30px;
+      --large-font-size: 50px;
+      --font-weight: bold;
+      --small-padding: 10px;
+      --medium-padding: 20px;
+      --large-padding: 50px;
+      --width: 100%;
+    
+} 
+
+html, body {
+      height: 100%;
+      width: var(--width);
+      background-color: #191970;
+      color: #DCDCDC;
+      font-family: serif, cursive;
+      font-size: 20px;
+}
+
+.container {
+    width: 1200px;
+    max-width: var(--width);
+    height: 400px;
+    margin: 0 auto;
+}
+
+#open span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      margin: 5px 0;
+      padding: 3px 0;
+      border: 1px solid red;
+      border-radius: 5px;
+      background-color: red;
+}
+
+.undoer {
+      visibility: hidden;
+      width: 30px;
+      height: 4px;
+      color: red;
+      text-decoration: none;
+      font-size: 50px;
+      font-weight: bolder;
+}
+
+#click {
+      visibility: hidden;
+}
+nav {
+      position: fixed;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; 
+      top: 0;
+      background-color:  #5F9EA0;
+      height: 90px;
+      width: var(--width);
+      padding: var(--medium-padding);
+      word-spacing: 10px;
+}
+
+nav a {
+      text-decoration: none;
+      font-size: var(--medium-font-size);
+      font-weight: var(--font-weight);
+      font-family: 'Orelega One', cursive;
+      text-transform: uppercase;
+}
+div a:hover {
+      color: var(--red-color);
+}
+
+#about_me {
+      margin: var(--margin);
+}
+
+h1 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: var(--large-font-size);
+      font-weight: var(--font-weight);
+      color: var(--mint-color);
+      font-family: 'Rubik Puddles', cursive;
+      word-spacing: 20px;
+}
+
+
+.intro {
+      font-family: serif, cursive; 
+      line-height: 20px;
+      margin: 50px 0;
+}
+
+span {
+      font-weight: var(--font-weight);
+      font-size: var(--medium-font-size);
+      font-style: italic;
+      text-transform: uppercase;
+      color: var(--steel-color);
+      font-family: 'Supermercado One', cursive;
+}
+
+.profile-links {
+      color: var(--mint-color);
+      word-spacing: 10px;
+  
+}
+
+div a {
+     color: var(--mint-color);
+}
+
+h3 {
+      text-decoration: none;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: var(--large-font-size);
+      color: #B0C4DE;
+      font-family: 'Lobster', cursive;
+      padding: var(--medium-padding);
+}
+
+ul {
+  margin: 50px 0 50px 25px;
+  padding: 0px;
+  background: #ffe5e5;
+
+}
+
+li {
+  list-style: disc outside none;
+  color: var(--steel-color);
+  padding: var(--small-padding);
+  font-weight: var(--font-weight);
+}
+
+#contact {
+      background-image: url("dog coder.jpg");
+      background-size: cover;
+      height: 700px;
+      opacity: 0.8;
+      color: var(--steel-color);
+      font-weight: var(--font-weight);
+      margin: var(--margin);
+}
+
+.div-container {
+      margin-left: 50px;
+      padding: var(--medium-padding);
+}
+
+.contact-form {
+      display: block;
+      height: 50px;
+      width: 35%;
+      border-radius: 0.5rem;
+}
+
+textarea {
+      display: block;
+      height: 80px;
+      width: 35%;
+}
+
+#register {
+      margin: var(--margin);
+      
+}
+
+.register-box {
+      display: block;
+      margin: 30px;
+      height: 60px;
+      width: var(--width);
+      border-radius: 0.5rem;
+}
+
+.container-text {
+      text-align: center;
+      font-size: var(--medium-font-size);
+      padding: var(--large-padding);
+}
+
+#login {
+      background-size: cover;
+      font-family: koulen, cursive;
+      font-style: italic;
+      margin: var(--margin);
+}
+
+.login-form {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+}
+
+.log-class {
+  height: 50px;
+}
+
+.btn {
+      padding: var(--small-padding);
+      border-radius: 0.3rem;
+      margin-top: 35px;
+      color: var(--steel-color);
+      width: 35%;
+      font-size: var(--medium-font-size);
+      transition: 5s;
+}
+button:hover {
+      background-color: var(--red-color);
+}
+
+.reg-btn {
+      padding: var(--small-padding);
+      border-radius: 0.3rem;
+      margin: 30px;
+      color: var(--steel-color);
+      width: var(--width);
+      font-size: var(--medium-font-size);
+      transition: 5s;
+}
+
+aside {
+      padding: var(--large-padding);
+}
+
+table {
+      color: var(--mint-color);
+      width: 30%;
+}
+
+th {
+      height: 40px;
+}
+
+img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      float: right;
+      margin-right: 100px;
+}
+
+img:hover {
+      transform: scale(2, 2);
+}
+
+footer {
+      text-align: center;
+      font-size: 10px;
+}
