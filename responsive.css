@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Supermercado+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Orelega+One&family=Rubik+Puddles&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Orelega+One&family=Rubik+Puddles&display=swap");
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 705px) {
   header {
     display: flex;
   }
@@ -19,7 +19,7 @@
     visibility: visible;
     margin-left: 20px;
     font-size: 40px;
-    font-family: 'Orelega One', cursive;
+    font-family: "Orelega One", cursive;
     text-decoration: none;
     text-shadow: 5px 5px hsl(224, 23%, 55%);
   }
@@ -30,7 +30,7 @@
 
   nav a {
     display: block;
-   /* transform: inherit;
+    /* transform: inherit;
     transition: inherit;*/
     font-size: 14px;
     white-space: nowrap;
@@ -41,16 +41,16 @@
     display: none;
   }
 
-  :target+.undoer {
+  :target + .undoer {
     display: block;
   }
 
-  :target~nav {
+  :target ~ nav {
     visibility: visible;
     transform: none;
   }
 
-  :target~#click {
+  :target ~ #click {
     visibility: hidden;
   }
 
@@ -85,10 +85,6 @@
     padding: 10px;
   }
 
-  table {
-    width: 80%;
-  }
-
   .contact-form {
     width: 100%;
   }
@@ -100,9 +96,8 @@
   .btn {
     width: 50%;
     padding: 3px;
-    margin-left: 50px;
+    margin-left: 70px;
   }
-
 
   .work {
     white-space: nowrap;
@@ -128,8 +123,15 @@
   }
 
   .login-form {
-    text-align: center;
     padding: 30px;
+  }
+
+  .log-class {
+    margin-left: 70px;
+  }
+
+  footer {
+    display: none;
   }
 }
 
@@ -137,7 +139,5 @@
 @media (min-width: 481px) and (max-width: 768px) {
 }
 
-
 @media (min-width: 1025px) and (max-width: 1200px) {
-
 }

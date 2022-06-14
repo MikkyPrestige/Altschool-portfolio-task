@@ -198,23 +198,17 @@ textarea {
 }
 
 #login {
-      background-size: cover;
       font-family: koulen, cursive;
       font-style: italic;
       margin: var(--margin);
-}
-
-.login-form {
-      width: 100vw;
-      height: 100vh;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; 
 }
 
 .log-class {
-  height: 50px;
+  height: 30px;
 }
 
 .btn {
@@ -240,19 +234,6 @@ button:hover {
       transition: 5s;
 }
 
-aside {
-      padding: var(--large-padding);
-}
-
-table {
-      color: var(--mint-color);
-      width: 30%;
-}
-
-th {
-      height: 40px;
-}
-
 img {
       width: 200px;
       height: 200px;
@@ -268,4 +249,5 @@ img:hover {
 footer {
       text-align: center;
       font-size: 10px;
+      margin-top: 100%;
 }
